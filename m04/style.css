@@ -1,1 +1,65 @@
+* {
+   font-family: 'NewShapeBookOblique', sans-serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: center;
+}
 
+body {
+	width: 90%;
+	margin: 0 auto;
+    background-image: url(https://img.freepik.com/free-vector/watercolor-abstract-floral-background_52683-134424.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#content {
+	overflow: auto;
+}
+
+#nav, #feature, #footer {
+	margin: 1%;
+}
+
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;}
+
+.column1 {
+    background-color: #E30B5C;
+}
+
+.column2 {
+    background-color: #F33A6A;
+}
+
+.column3 {
+    background-color: #E0BFB8;
+    margin-right: 0%;
+}
+
+li {
+	display: inline;
+	padding: 0.5em;}
+
+#nav{
+	background-color: pink;
+	padding: 0.5em 0;
+}
+
+#footer{
+	background-color: #FF10F0;
+	padding: 0.5em 0;
+}
+
+#feature{
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #F8C8DC;
+}
+
+.article {
+	height: 10em;
+	margin-bottom: 1em;
+}
