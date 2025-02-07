@@ -1,22 +1,15 @@
 var string = window.prompt("Please enter a number between 0 - 10");
-var num = string*1
-function isNumber(num){
-    if(isNaN(num) === 'False')
-        num = 0
-}
-if (isNumber(num) === 'True')
-  num = num;
-if (isNumber(num) === 'False')
-  num = 0;
-else
-    num = 0;
+var num = string*1;         // Convert string into number
 var table = num;            // Unit of table
 var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '<h2>Multiplication Table</h2>';   // Message
-
 if (operator === 'multiplication') {
   // Do multiplication
+  if (isNaN(num)) {
+    // If NaN or null inputted number is treated as 0
+    table = 0;
+  }
   while (i < 11) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
     i++;
