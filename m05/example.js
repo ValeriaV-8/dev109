@@ -1,10 +1,15 @@
 var string = window.prompt("Please enter a number between 0 - 10");
 var num = string*1
+function isNumber(num){
+    if(isNaN(num) === 'False')
+        num = 0
+}
 if (isNumber(num) === 'True')
-  return num;
+  num = num;
 if (isNumber(num) === 'False')
   num = 0;
-
+else
+    num = 0;
 var table = num;            // Unit of table
 var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
