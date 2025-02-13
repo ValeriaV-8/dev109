@@ -5,7 +5,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     //Bottom half of rhombus
     function halfBottom(pHeight, pColorEven, pColorOdd, pSymbol){
         var hBottom ="";
-        for (i = pHeight; i> 0; i--){
+        for (i = pHeight - 1; i> 0; i--){
             hBottom +="<p>";
                 //Position changes depending on odd or even
                 for (j = 0; j < i; j++){
