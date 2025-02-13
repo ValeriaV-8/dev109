@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="description" content="Week 6 - BC - Rhombus">
-<meta charset="utf-8">
-<title>JS Bin</title>
-</head>
-<body>
-<label>What is the size of Rhombus?</label><br>
-<input type="text" id="rHeight" value="5" size="5">
-<br>
-<label>Choose color for Even position</label><br>
-<select id="colorEven">
-<option value="#0000FF">Blue</option>
-<option value="#FF0000">Red</option>
-<option value="#FF9900">Orange</option>
-</select><br>
-
-<label>Choose color for Odd position</label><br>
-<select id="colorOdd">
-<option value="#FF0099">Pink</option>
-<option value="#33FF00">Green</option>
-<option value="#660099">Purple</option>
-</select>
-<br>
-<label>Choose symbol for Rhombus</label>
-<select id="symbol">
-<option value="*">*</option>
-<option value="$">$</option>
-<option value="@">@</option>
-</select>
-<br>
-<button onclick="createRhombus(document.getElementById('rHeight').value,
-document.getElementById('colorEven').value,
-document.getElementById('colorOdd').value,
-document.getElementById('symbol').value);">Display Rhombus</button>
-<div id="upLeft">Rhombus</div>
-<div id="upRight"></div>
-<div id="downLeft"></div>
-<div id="downRight"></div>
-
-<!-- CALL YOUR JAVASCRIPT FILE IF YOU ARE USING A HOSTING ENVIRONMENT -->
-
-<script src="main.js"></script>
-
-</body>
+   <head>
+      <meta name="description" content="M06-Rhombus">
+      <meta charset="utf-8">
+      <title>M06-Rhombus</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <h1>James Kim</h1>
+      <div>
+         <label>What is the size of Rhombus?</label><br>
+         <input type="text" id="rHeight" value="5" size="5">
+         <br>
+      </div>
+      <div>
+         <label>Choose color for Even position</label><br>
+         <select id="colorEven">
+            <option value="#C0C0C0">Silver</option>
+            <option value="#000000">Black</option>
+            <option value="#FFFF00">Yellow</option>
+         </select>
+         <br>
+      </div>
+      <div>
+         <label>Choose color for Odd position</label><br>
+         <select id="colorOdd">
+            <option value="#00FF00">Lime</option>
+            <option value="#00FFFF">Auqa</option>
+            <option value="#000080">Navy</option>
+         </select>
+         <br>
+      </div>
+      <div>
+         <label>Choose symbol for Rhombus</label>
+         <select id="symbol">
+            <option value="#">#</option>
+            <option value="%">%</option>
+            <option value="&">&</option>
+         </select>
+         <br>
+      </div>
+      <div>
+         <button onclick="createRhombus(document.getElementById('rHeight').value,
+            document.getElementById('colorEven').value,
+            document.getElementById('colorOdd').value,
+            document.getElementById('symbol').value);">Display Rhombus</button>
+      </div>
+      <div id="halfTop">Rhombus</div>
+      <div id="halfBottom"></div>
+      <script src="main.js"></script>
+   </body>
 </html>
