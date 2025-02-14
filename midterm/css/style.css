@@ -18,7 +18,7 @@ a:hover { color: #880000; }
 #wrap { 
 margin: 40px auto;
 width: 940px;
-background: #fff;
+background: #D3D3D3;
 
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -36,7 +36,7 @@ border-radius: 10px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
-background: #f9f9f9;
+background: #E5E4E2;
 padding: 20px 0 40px 0;
 }
 #header h1 {
@@ -58,16 +58,16 @@ font-weight: normal;
 color: #171717;
 font-size: 22px;
 letter-spacing: -1px;
-background: #FFEE9F;
-border: 1px solid #FFE25F;
+background: #008080;
+border: 1px solid #008080;
 display: inline;
 }
 
 #topmenu {
 background: #f1f1f1;
 padding: 10px 20px;
-border-bottom: 1px solid #e1e1e1;
-border-top: 1px solid #e1e1e1;
+border-bottom: 1px solid #B2BEB5;
+border-top: 1px solid #B2BEB5;
 }
 #topmenu ul { margin: 0; padding: 0; list-style-type: none;}
 #topmenu li { display: inline; padding: 0 20px 0 0 }
@@ -111,7 +111,7 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 
-background: #3f3f3f;
+background: #808080;
 color: #fff;
 padding: 20px;
 border-top: 1px solid #1f1f1f;
@@ -122,4 +122,3 @@ border-top: 1px solid #1f1f1f;
 .left { float: left; }
 .right { float: right; }
 .clear { clear: both; }
-
