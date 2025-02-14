@@ -6,6 +6,7 @@ background: #818589;
 background-image: url("https://raw.githubusercontent.com/ValeriaV-8/dev109/refs/heads/main/midterm/images/backgroundimage2.jpg");
 background-repeat: no-repeat;
 background-size: 100% 100%;
+background-attachment: fixed; 
 color: #3f3f3f;
 font-size: 16px;
 line-height: 24px;
