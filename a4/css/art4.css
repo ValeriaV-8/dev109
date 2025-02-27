@@ -1,0 +1,27 @@
+.warning {
+    color:red;
+    font-weight: bold;
+}
+
+body {
+    text-align: center;
+    background-image: url("../art4/images/andy-holmes_1.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+
+}
+
+form {
+    display: inline-block;
+}
+
+#myform {
+    border: 2px solid #333333;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E5E4E2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
