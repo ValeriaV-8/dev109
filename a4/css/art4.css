@@ -6,6 +6,7 @@
 body {
     text-align: center;
     background-color: #36454F;
+    background-repeat: no-repeat;
 }
 
 form {
@@ -20,5 +21,12 @@ form {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+#validationCSS {
+    height: auto;
+    max-width: 100%;
+}
 
-
+#validationHTML {
+    height: auto;
+    max-width: 100%;
+}
