@@ -1,6 +1,6 @@
 function isValid() {
     if (firstName() && lastName() && userEmail() && phoneNumber() && userName()
-        && passWord() && userAddress() && userState() && userCountry()
+        && passWord() && userAddress() && userCity() && userState() && userCountry()
         && userZipcode()
     )
     return true;
