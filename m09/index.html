@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Draw dots">
+    <title>Module 09 - James Kim</title>
+    <link rel="stylesheet" href="css/m09.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="title1">
+        <h1>Module 09 - Draw Dots</h1>
+        <h3>Click anywhere on the canvas to draw some dots!</h3>
+        <p>
+            <label for="colorSelect">Choose a color</label>
+            <select name="colors" id="colorSelect">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+            </select>
+        </p>
+        <p>    
+            <label for="dotSize">Choose a size</label>
+            <select name="size" id="dotSize">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </p>
+        <h3>Click on the clear button to clear the canvas!</h3>
+        <button id="clear" type="button">Clear</button>
+    </div>
+    <canvas id="canvas" onclick="draw(event)"></canvas>
+    <script src="js/draw.js"></script>
+ </body>
+ </html>
+ 
