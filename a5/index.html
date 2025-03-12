@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Artifact 05 - Slideshow">
+      <title>Artifact 05 - Slideshow</title>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+   </head>
+   <body>
+    <div class="slideshow">
+        <div class="images">
+            <img class="show" src="img/new_year.jpeg" alt="New Years">
+            <img class="show" src="img/fall.jpeg" alt="Fall">
+            <img class="show" src="img/summer.jpeg" alt="Summer">
+            <img class="show" src="img/spring.webp" alt="Spring">
+            <img class="show" src="img/winter.jpeg" alt="Winter">
+        </div>
+        <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        <div class="btns">
+            <button id="nextBtn" onclick="nextImage()">&#10094;</button>
+            <button id="prevBtn" onclick="prevImage()">&#10095;</button>
+        </div>
+    </div>
+    <script src="script/slideshow.js"></script>
+   </body>
+   <footer>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+        </p>
+   </footer>
+</html>
