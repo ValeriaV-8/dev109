@@ -1,0 +1,47 @@
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.images {
+    margin-inline: auto;
+}
+
+.slideshow img {
+    width: 900px;
+    height: 600px;
+    display: none;
+    margin-inline: auto;
+    object-fit: fill;
+}
+
+img.displaySlide {
+    display: block;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    font-size: 2rem;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+p {
+    text-align: center;
+}
