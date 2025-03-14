@@ -3,9 +3,23 @@ const images = document.querySelectorAll(".images img");
 
 // For list
 let slideIndex = 0;
+let intervalId = null;
 
 // For description
 let captionText = document.getElementById("caption");
+
+// Timer
+function timer(){
+    var sec = 3;
+    var timer = setInterval(function(){
+        document.getElementById('timer').innerHTML = sec + " secs";
+        sec--;
+        if (sec < 1) {
+            clearInterval(timer);
+        }
+    }, 1000);
+}
+
 
 // First slide
 firstSlide();
@@ -14,6 +28,8 @@ firstSlide();
 function firstSlide(){
     if(images.length > 0){
         images[slideIndex].classList.add("displaySlide");
+        intervalId = setInterval(nextImage, 4000);
+        timer();
     }
     captionText.innerHTML = images[slideIndex].alt;
 }
@@ -23,10 +39,12 @@ function showSlide(index){
     // Resets to first image
     if(index >= images.length){
         slideIndex = 0;
+        timer();
     }
     // Pass
     else if(index < 0){
         slideIndex = images.length - 1;
+        timer();
     }
     images.forEach(show => {
         // Removes class from current image
@@ -41,12 +59,18 @@ function showSlide(index){
 
 // For prev button
 function prevImage(){
+    clearInterval(intervalId);
     slideIndex--;
     showSlide(slideIndex)
+    intervalId = setInterval(nextImage, 4000);
+    timer();
 }
 
 // For next button
 function nextImage(){
+    clearInterval(intervalId);
     slideIndex++;
     showSlide(slideIndex);
+    intervalId = setInterval(nextImage, 4000);
+    timer();
 }
