@@ -10,7 +10,7 @@ let captionText = document.getElementById("caption");
 
 // Timer
 function timer(){
-    var sec = 3;
+    var sec = 4;
     var timer = setInterval(function(){
         document.getElementById('timer').innerHTML = sec + " secs";
         sec--;
@@ -28,7 +28,7 @@ firstSlide();
 function firstSlide(){
     if(images.length > 0){
         images[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextImage, 4000);
+        intervalId = setInterval(nextImage, 5000);
         timer();
     }
     captionText.innerHTML = images[slideIndex].alt;
@@ -62,7 +62,7 @@ function prevImage(){
     clearInterval(intervalId);
     slideIndex--;
     showSlide(slideIndex)
-    intervalId = setInterval(nextImage, 4000);
+    intervalId = setInterval(nextImage, 5000);
     timer();
 }
 
@@ -71,6 +71,6 @@ function nextImage(){
     clearInterval(intervalId);
     slideIndex++;
     showSlide(slideIndex);
-    intervalId = setInterval(nextImage, 4000);
+    intervalId = setInterval(nextImage, 5000);
     timer();
 }
