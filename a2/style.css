@@ -1,0 +1,70 @@
+/* The heading (Duy) */
+h1 {
+   font-family: 'GrotesqueBourgeoisieRegular';
+   font-weight: normal;
+   font-style: normal;
+   text-align:center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #5871b1;
+   color: #fff;
+   font-size: 600%;
+   padding: 10px;
+}
+
+/* Light color (Duy) */
+.white{
+   border: 1px solid black;
+   background-color: #fbe7f9;
+   height:125px;
+   width:125px;
+}
+
+/* Dark color (James) */
+.black{
+   border: 1px solid black;
+   width: 125px;
+   height: 125px;
+   background-color:#787878;
+}
+
+/* Set the row (Duy) */
+.row{
+   display: flex;
+   justify-content: center; 
+}
+
+/* Control the way the chessboard appear (Duy) */
+#container {
+   text-align: center;
+   margin: 0;
+   justify-content: center; 
+   align-items: center;   
+   margin: 0 auto; 
+   margin-top: 5%;
+}
+
+/* Control the image (Duy) */
+/* Removed margin-left because images were off center (James) */
+/* Changed width and height so it changes with the size of the window */
+img {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+/* Add background image (James) */
+body {
+  background-image:url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg");
+}
+
+/* Footer (James) */
+#footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid 1px;
+   padding: 20px;
+   margin: 10px auto;  
+   background-color: black;
+}
