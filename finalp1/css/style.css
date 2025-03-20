@@ -3,7 +3,7 @@ font-family: "Lato", Arial, sans-serif;
 margin: 0;
 padding: 0; 
 background: #818589;
-background-image: url("https://raw.githubusercontent.com/ValeriaV-8/dev109/refs/heads/main/midterm/images/backgroundimage2.jpg");
+background-image: url("/images/backgroundimage2.jpg"); 
 background-repeat: no-repeat;
 background-size: 100% 100%;
 background-attachment: fixed; 
@@ -96,8 +96,8 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 #menu ul li a { color: #12c; text-decoration: none; border-bottom: 1px dotted #12c; }
 #menu ul li a:hover { color: #c12; border-bottom: 1px dotted #c12; }
 
-#content { float: left; width: 580px; margin: 10px 0 40px 20px;}
-#content h2 { font-weight: normal; font-size: 22px; line-height: 33px; }
+#content { float: left; margin: 10px 0 40px 20px;}
+#content h2 { font-weight: bold; font-size: 22px; line-height: 33px; }
 #content h3 { font-size: 17px; font-weight: normal; }
 
 .cleft { float: left; width: 280px; margin: 10px 0; }
@@ -148,4 +148,41 @@ img{
     width: 450px;
     height: auto;
     object-fit: fill;
+}
+#artifact img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+#artifact {
+    line-height: 1.6;
+}
+.artLink {
+    padding: 5px;
+}
+.flexContainer {
+    display: flex;
+    align-items: center;
+}
+.flexText {
+    padding: 5px;
+}
+.modAssign img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+.modAssign a {
+    vertical-align: middle;
+}
+.modAssign_1 {
+    display:flex;
+    align-items: center;
+}
+.modAssign_1 img {
+    width: 100px;
+    height: 100px;
+}
+.modAssign {
+    padding-bottom: 5px;
 }
