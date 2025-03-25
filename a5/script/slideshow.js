@@ -20,7 +20,6 @@ function timer(){
     }, 1000);
 }
 
-
 // First slide
 firstSlide();
 
@@ -73,4 +72,8 @@ function nextImage(){
     showSlide(slideIndex);
     intervalId = setInterval(nextImage, 5000);
     timer();
+}
+
+function stopAdvance(){
+    clearInterval(intervalId);
 }
